@@ -49,7 +49,6 @@ Mendapatkan daftar semua produk dengan pagination.
 **Query Parameters:**
 
 - `page` (optional): Halaman (default: 1)
-- `limit` (optional): Jumlah data per halaman (default: 5)
 - `category` (optional): Filter berdasarkan kategori
 
 **Contoh Request:**
@@ -59,7 +58,7 @@ Mendapatkan daftar semua produk dengan pagination.
 curl -X GET "http://localhost:3000/products"
 
 # Dengan pagination
-curl -X GET "http://localhost:3000/products?page=1&limit=10"
+curl -X GET "http://localhost:3000/products?page=1"
 
 # Filter berdasarkan kategori
 curl -X GET "http://localhost:3000/products?category=Electronics"
